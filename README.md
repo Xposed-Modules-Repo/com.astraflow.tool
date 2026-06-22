@@ -9,6 +9,9 @@
   <a href="https://github.com/Xposed-Modules-Repo/com.astraflow.tool/releases">
     <img src="https://img.shields.io/github/downloads/Xposed-Modules-Repo/com.astraflow.tool/total?style=flat-square" alt="Downloads"/>
   </a>
+  <a href="https://modules.lsposed.org/module/com.astraflow.tool">
+    <img src="https://img.shields.io/badge/LSPosed-Module-blueviolet?style=flat-square&logo=android" alt="LSPosed Module"/>
+  </a>
   <img src="https://img.shields.io/badge/Android-14%2B-green?style=flat-square" alt="Min SDK"/>
 </p>
 
