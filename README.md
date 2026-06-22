@@ -60,7 +60,7 @@
 
 - 酷安: [穆远星](https://www.coolapk.com/u/28719807)
 - QQ 群: [979221822](https://qm.qq.com/q/979221822)
-- LSPosed 模块仓库: [modules.lsposed.org](https://modules.lsposed.org)
+- 星尘购买: [pay.ldxp.cn](https://pay.ldxp.cn/shop/Astra/grpelk)
 
 ## 声明
 
