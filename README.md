@@ -1,6 +1,6 @@
 # 星流 AstraFlow
 
-[![星河岛歌词与面容幻影：胶囊、单副岛和双副岛](https://raw.githubusercontent.com/Xposed-Modules-Repo/com.astraflow.tool/main/assets/lyrics-and-phantom-191829d3.gif)](https://astraflow.cc/island/)
+[![星河岛歌词与面容幻影：胶囊、单副岛和双副岛](https://raw.githubusercontent.com/Xposed-Modules-Repo/com.astraflow.tool/main/assets/lyrics-and-phantom-3055522.gif)](https://astraflow.cc/island/)
 
 **星河岛在屏幕顶部显示歌词、微信消息和人脸识别动画。胶囊与展开卡片可以分别使用相册里的图片、GIF 或视频作背景。**
 
