@@ -1,74 +1,43 @@
-# AstraFlow / 星流
+# 星流 AstraFlow
 
-面向 ColorOS 16 / realme UI 7 的流体云增强 Xposed 模块
+[![星河岛歌词与面容幻影：胶囊、单副岛和双副岛](https://raw.githubusercontent.com/Xposed-Modules-Repo/com.astraflow.tool/main/assets/lyrics-and-phantom-191829d3.gif)](https://astraflow.cc/island/)
+
+**星河岛在屏幕顶部显示歌词、微信消息和人脸识别动画。胶囊与展开卡片可以分别使用相册里的图片、GIF 或视频作背景。**
+
+[下载正式版](https://github.com/Xposed-Modules-Repo/com.astraflow.tool/releases/latest) · [版本更新日志](https://github.com/Xposed-Modules-Repo/com.astraflow.tool/releases) · [星河岛演示](https://astraflow.cc/island/)
+
+## 星河岛能做什么
+
+- **星河岛歌词。** 在胶囊中查看滚动歌词，也可同时显示原文与译文。展开后可切歌、暂停或调整播放进度。支持词幕、SuperLyric 和系统歌词（LyricInfo）；音乐卡片可调整按钮位置与封面配色。
+- **人脸识别岛。** 锁屏解锁时显示识别动画。「面容幻影」在识别成功后显示圆环与对勾，再收回胶囊。在星流内可切换主题并试播成功、失败效果。
+- **微信消息上岛。** 在「通知上岛」选中微信，收到通知后可展开查看头像和正文。通知支持快捷回复时，可直接在卡片里输入和发送。
+- **图片与视频背景。** 在「外观」中分别为胶囊和展开卡片选择素材、裁选显示区域和调整背景深浅。描边、圆角、位置和动画也可单独设置。
+- **胶囊、单副岛与双副岛。** 多项内容同时进行时，主岛显示当前事项，其他事项可显示在一侧或两侧。点按副岛可切换至主岛。
 
 <p align="center">
-  <a href="https://github.com/Xposed-Modules-Repo/com.astraflow.tool/releases/latest">
-    <img src="https://img.shields.io/github/v/release/Xposed-Modules-Repo/com.astraflow.tool?style=flat-square" alt="Latest Release"/>
-  </a>
-  <a href="https://github.com/Xposed-Modules-Repo/com.astraflow.tool/releases">
-    <img src="https://img.shields.io/github/downloads/Xposed-Modules-Repo/com.astraflow.tool/total?style=flat-square" alt="Downloads"/>
-  </a>
-  <a href="https://modules.lsposed.org/module/com.astraflow.tool">
-    <img src="https://img.shields.io/badge/LSPosed-Module-blueviolet?style=flat-square&logo=android" alt="LSPosed Module"/>
-  </a>
-  <img src="https://img.shields.io/badge/Android-13%2B-green?style=flat-square" alt="Min SDK"/>
+  <img src="https://raw.githubusercontent.com/Xposed-Modules-Repo/com.astraflow.tool/main/assets/wechat-reply.webp" width="396" alt="微信消息在展开卡片内编辑和发送">
+  <img src="https://raw.githubusercontent.com/Xposed-Modules-Repo/com.astraflow.tool/main/assets/card-photo-background.webp" width="396" alt="使用相册图片作为展开卡片背景">
 </p>
 
----
+## 安装与适用范围
 
-## 功能
+星流需要 **Android 15 或以上、Root 权限及 LSPosed**。从 v2.2 起，星河岛面向符合条件的安卓设备，不限品牌。
 
-- **全应用上岛** — 不限官方白名单，通知均可胶囊化为流体云
-- **原生歌词胶囊** — 状态栏实时滚动歌词，适配多音源
-- **常驻实时云** — 常驻流体云胶囊，展示天气、日历、待办、节假日、电量、倒计时等，支持自定义文字模板
-- **胶囊 / 卡片定制** — 颜色、背景（纯色 / 图片 / 动态）、尺寸、描边、圆角、月牙、封面形状
-- **动态背景** — GIF / 视频帧序列作为胶囊或卡片背景
-- **屏幕录制** — 内置录屏，可自定义帧率与码率
-- **手势侧边栏** — 全面屏返回手势停顿即可召唤侧边栏，时长可调
-- **浮窗回复拓展** — 为更多应用扩展通知横幅的浮窗回复
-- **状态栏图标排序** — 自由调整状态栏图标的显示与顺序
-- **游戏助手弹幕白名单** — 为更多游戏开放游戏助手的弹幕通知
+1. 从[正式发布页](https://github.com/Xposed-Modules-Repo/com.astraflow.tool/releases/latest)下载安装包，在 LSPosed 中启用星流，并按应用提示勾选作用域。
+2. OPPO、一加、真我设备须安装并启用与当前版本配套的「流体云事件接入」插件。ColorOS 提供的外卖、打车、导航及计时等系统事件由该插件接入；其他系统的厂商事件按各自的接入情况显示。
+3. 重新加载模块或重启手机，打开星流，在「星河岛」中设置功能与外观。
 
-## 适配范围
+| 星流版本 | 框架要求 | ColorOS 配套插件 |
+| --- | --- | --- |
+| v2.1 | 支持 API 101 的 LSPosed | 「流体云事件接入」通用版 |
+| v2.2 | 支持 API 102 的 LSPosed | ColorOS 15、16、17 分别使用 C15、C16、C17 |
 
-| 系统 | 版本 |
-|------|------|
-| ColorOS | 16 / 16.1 |
-| realme UI | 7 / 7.1 |
+## 更多功能与帮助
 
-设备：OnePlus / realme / OPPO（搭载以上系统版本）
+星流还提供堆叠通知、浮窗回复、状态栏定制、超高帧录屏、配置备份和插件商店。部分系统功能取决于设备能力。
 
-## 环境要求
+- **问题反馈：** 登录星流后，打开首页「问题反馈与远程调试」；也可查看[公开处理进度](https://astraflow.cc/feedback)。
+- **社区：** QQ 群 **979221822** · [酷安：穆远星](https://www.coolapk.com/u/28719807)。
+- **应用接入：** [星河岛开发者平台](https://astraflow.cc/island/develop-quickstart.html)。
 
-- Android 13+
-- Root
-- LSPosed 或兼容的 Xposed 框架
-- 作用域：system、com.android.systemui 等（模块已声明 staticScope，安装后自动勾选）
-
-## 下载
-
-前往 [Releases](https://github.com/Xposed-Modules-Repo/com.astraflow.tool/releases) 下载最新正式版 APK。
-
-## 使用
-
-1. 安装 APK，在 LSPosed 中启用模块
-2. 确认作用域已勾选（模块已声明 staticScope）
-3. 重启设备
-4. 打开 AstraFlow 进行配置
-
-## 社区
-
-- 酷安：[穆远星](https://www.coolapk.com/u/28719807)
-- QQ 群：[979221822](https://qm.qq.com/q/979221822)
-- 星尘购买：[pay.ldxp.cn](https://pay.ldxp.cn/shop/Astra/grpelk)
-
-## 声明
-
-- 本仓库仅发布正式构建 APK，不含源代码
-- 使用 Xposed 模块存在风险，请自行评估
-- 仅供个人学习研究使用
-
----
-
-Copyright 2026 穆远星 (MuYuanXing). All rights reserved.
+Copyright © 2026 穆远星（MuYuanXing）。保留所有权利。
