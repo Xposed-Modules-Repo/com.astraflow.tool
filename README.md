@@ -6,7 +6,7 @@
 
 [下载正式版](https://github.com/Xposed-Modules-Repo/com.astraflow.tool/releases/latest) · [版本更新日志](https://github.com/Xposed-Modules-Repo/com.astraflow.tool/releases) · [星河岛演示](https://astraflow.cc/island/)
 
-**当前正式版：v2.2.6。** 修复部分情况下系统流体云启动失败、系统原有胶囊未隐藏及覆盖更新后已有内容未及时恢复的问题。
+**当前正式版：v2.2.7。** 修复云端备份、配置分享与工单处理异常，完善配置恢复、失败重试和附件处理。
 
 ## 星河岛能做什么
 
