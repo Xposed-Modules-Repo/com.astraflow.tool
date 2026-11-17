@@ -1,41 +1,49 @@
 # 星流 AstraFlow
 
-[![星河岛歌词与面容幻影：胶囊、单副岛和双副岛](https://raw.githubusercontent.com/Xposed-Modules-Repo/com.astraflow.tool/main/assets/lyrics-and-phantom-3055522.gif)](https://astraflow.cc/island/)
+星流主要适配 OPPO、一加和真我。在屏幕顶部的胶囊上看歌词，自选应用通知上岛，也可以常驻显示时间、设备状态和充电信息。胶囊、主副岛与展开卡片均可调整，支持自选背景、位置、大小、动画和显示规则。
 
-**星河岛在屏幕顶部显示歌词、微信消息和人脸识别动画。胶囊与展开卡片可以分别使用相册里的图片、GIF 或视频作背景。**
-
-[下载正式版](https://github.com/Xposed-Modules-Repo/com.astraflow.tool/releases/latest) · [版本更新日志](https://github.com/Xposed-Modules-Repo/com.astraflow.tool/releases) · [星河岛演示](https://astraflow.cc/island/)
-
-**当前正式版：v2.2.7。** 修复云端备份、配置分享与工单处理异常，完善配置恢复、失败重试和附件处理。
-
-## 星河岛能做什么
-
-- **星河岛歌词。** 在胶囊中查看滚动歌词，也可同时显示原文与译文。展开后可切歌、暂停或调整播放进度。支持词幕、SuperLyric 和系统歌词（LyricInfo）；音乐卡片可调整按钮位置与封面配色。
-- **人脸识别岛。** 锁屏解锁时显示识别动画。「面容幻影」在识别成功后显示圆环与对勾，再收回胶囊。在星流内可切换主题并试播成功、失败效果。
-- **微信消息上岛。** 在「通知上岛」选中微信，收到通知后可展开查看头像和正文。通知支持快捷回复时，可直接在卡片里输入和发送。
-- **图片与视频背景。** 在「外观」中分别为胶囊和展开卡片选择素材、裁选显示区域和调整背景深浅。描边、圆角、位置和动画也可单独设置。
-- **胶囊、单副岛与双副岛。** 多项内容同时进行时，主岛显示当前事项，其他事项可显示在一侧或两侧。点按副岛可切换至主岛。
-- **系统流体云。** OPPO、一加、真我的 ColorOS 15、16、17 设备可在星河岛查看系统提供的外卖、打车、导航和计时等提示。在「星河岛 → 系统流体云」可查看运行状态、选择显示内容。关闭该功能不影响音乐、普通通知和验证码。
+[下载星流](https://github.com/Xposed-Modules-Repo/com.astraflow.tool/releases/latest) · [版本更新日志](https://github.com/Xposed-Modules-Repo/com.astraflow.tool/releases) · [星河岛演示](https://astraflow.cc/island/)
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Xposed-Modules-Repo/com.astraflow.tool/main/assets/wechat-reply.webp" width="396" alt="微信消息在展开卡片内编辑和发送">
-  <img src="https://raw.githubusercontent.com/Xposed-Modules-Repo/com.astraflow.tool/main/assets/card-photo-background.webp" width="396" alt="使用相册图片作为展开卡片背景">
+  <img src="https://raw.githubusercontent.com/Xposed-Modules-Repo/com.astraflow.tool/main/assets/star-island-hero.webp" width="680" alt="星河岛显示实时活动的界面">
 </p>
 
-## 安装与适用范围
+**当前正式版 v2.2.8**
 
-星流需要 **Android 15 或以上、Root 权限及支持 API 102 的 LSPosed**。星河岛面向符合条件的安卓设备，不限品牌；系统功能的可用范围因设备而异。
+## 星河岛
 
-1. 从[正式发布页](https://github.com/Xposed-Modules-Repo/com.astraflow.tool/releases/latest)下载安装包。首次安装时，在 LSPosed 中启用星流，并按应用提示授权所需的系统作用域。
-2. ColorOS 15、16、17 的系统流体云由星流内置，无需另外安装或启用插件。使用系统流体云需为星流授权「系统界面」；「系统桌面」授权用于打开应用和返回桌面的动画。
-3. 更新可直接覆盖安装，保留设置和登录信息。星流会自动清理旧流体云插件，无需因此重启手机。若更新后功能仍未生效，请在首页右上角「维护」中执行「重启作用域」。
+- **星河岛歌词。** 让当前歌词直接显示在胶囊上，可选无感滚动或随歌词变化的灵动宽度。展开卡片可查看歌词、切歌、暂停和调整进度。支持 SuperLyric 和系统歌词（LyricInfo）。
+- **自选应用上岛。** 从应用列表选择要上岛的应用，在胶囊和展开卡片中查看通知。可按应用设置首条通知自动展开，也可在卡片中回复支持快捷回复的消息。
+- **人脸识别岛。** 锁屏进行人脸识别时，星河岛从胶囊展开，播放所选主题和识别结果。应用内可试播「Face ID」「刻环」等主题的成功与失败效果。
+- **常驻星河岛与常驻充电岛。** 自定义常驻胶囊的标题和卡片内容，可显示时间、电量、网速等信息。充电时可常驻显示电量和功率。也可以通过常驻星河天气岛查看天气。
+- **岛的外观与布局。** 为胶囊和卡片分别设置图片、GIF 或视频背景，调整尺寸、圆角、位置、描边与展开动画。多项活动同时进行时可用主岛和副岛分别显示。
+- **内置系统流体云。** ColorOS 15、16、17 的外卖、打车、导航、来电与计时等实时活动可直接显示在星河岛，并在卡片上使用系统提供的操作。
 
-## 更多功能与帮助
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Xposed-Modules-Repo/com.astraflow.tool/main/assets/wechat-reply.webp" width="395" alt="展开通知卡片，在卡片内回复微信消息">
+  <img src="https://raw.githubusercontent.com/Xposed-Modules-Repo/com.astraflow.tool/main/assets/card-photo-background.webp" width="395" alt="配置展开卡片的相册图片背景">
+</p>
 
-星流还提供堆叠通知、浮窗回复、状态栏定制、超高帧录屏、配置备份和插件商店。部分系统功能取决于设备能力。
+## 系统增强
 
-- **问题反馈：** 登录星流后，打开首页「问题反馈与远程调试」；也可查看[公开处理进度](https://astraflow.cc/feedback)。
-- **社区：** QQ 群 **979221822** · [酷安：穆远星](https://www.coolapk.com/u/28719807)。
-- **应用接入：** [星河岛开发者平台](https://astraflow.cc/island/develop-quickstart.html)。
+- **堆叠通知。** 将同一应用的多条通知在系统通知中心堆叠显示，支持调整堆叠样式和优先应用。
+- **状态栏与浮窗回复。** 可调整状态栏图标顺序，设置星河岛的图标避让，并为选定应用开启浮窗回复。
+- **手势侧边栏与录屏。** 从屏幕侧边打开常用应用，使用超高帧录屏记录操作。可在星流中备份配置、分享方案或导入社区配置。
+
+标有星尘徽章的功能需要在本设备开通。
+
+## 安装与更新
+
+星流需要 **Android 15 或以上、Root 权限与支持 API 102 的 LSPosed**。系统流体云适用于 ColorOS 15、16、17，随星流安装包交付。各项系统增强功能的可用范围取决于设备和系统版本。
+
+1. 下载安装包，在 LSPosed 中启用星流，并按应用提示勾选所需作用域。
+2. 使用系统流体云时，确认已勾选「系统界面」。与系统桌面联动的应用开合动画需要「系统桌面」作用域。
+3. 更新时直接覆盖安装，然后在首页右上角「维护」中选择「重启作用域」。
+
+## 反馈与社区
+
+- 登录后，在首页进入「售后工单与远程调试」提交工单。 [公开反馈](https://astraflow.cc/feedback)
+- QQ 群 **979221822**。 [酷安 · 穆远星](https://www.coolapk.com/u/28719807)
+- 为应用接入星河岛。 [星河岛开发者平台](https://astraflow.cc/island/develop-quickstart.html)
 
 Copyright © 2026 穆远星（MuYuanXing）。保留所有权利。
