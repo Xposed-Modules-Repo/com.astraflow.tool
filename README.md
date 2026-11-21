@@ -8,7 +8,7 @@
   <img src="https://raw.githubusercontent.com/Xposed-Modules-Repo/com.astraflow.tool/main/assets/star-island-hero.webp" width="680" alt="星河岛显示实时活动的界面">
 </p>
 
-**当前正式版 v2.2.8**
+**当前正式版 v2.2.9**
 
 ## 星河岛
 
